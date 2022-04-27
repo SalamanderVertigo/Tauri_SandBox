@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { invoke } from '@tauri-apps/api/tauri'
+
 
 function App() {
   return (
@@ -16,8 +18,9 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React Today!
         </a>
+        <button onClick={() => invoke('my_custom_command')}> Invoke</button>
       </header>
     </div>
   );
