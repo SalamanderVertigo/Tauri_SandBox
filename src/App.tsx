@@ -21,6 +21,7 @@ function App() {
           Learn React Today!
         </a>
         <button onClick={() => invoke('my_custom_command')}> Invoke</button>
+        <button onClick={() => invoke('access_window_test',{ Window } )}> Invoke</button>
       </header>
     </div>
   );
